@@ -1,0 +1,30 @@
+{
+  "name": "to-do-list",
+  "version": "1.0.0",
+  "description": "This is my first react project which uses react library to design a basic to-do app",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ujzwalp/To-Do-List.git"
+  },
+  "keywords": [
+    "todo"
+  ],
+  "author": "ujzwalp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ujzwalp/To-Do-List/issues"
+  },
+  "homepage": "https://github.com/ujzwalp/To-Do-List#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
