@@ -1,3 +1,92 @@
-* {
-  background-color: azure;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0 0;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  background-color: darkgray;
+}
+
+.app {
+  height: 20rem;
+  width: 40rem;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgb(85, 56, 56);
+}
+
+.action {
+  display: flex;
+  justify-content: space-around;
+  background-color: cadetblue;
+  margin: 0px 10px;
+  width: 38rem;
+  height: 2rem;
+  padding: 5px;
+  color: white;
+  border-radius: 3px;
+}
+
+header {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(66, 65, 65);
+}
+
+.searchbox {
+  margin: 10px;
+  width: 35rem;
+  height: 2rem;
+  padding: 10px;
+  position: relative;
+  left: 2rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px 2px rgb(162, 208, 214);
+}
+
+.list {
+  margin: 0rem 2.5rem;
+  width: 35rem;
+  padding: 10px;
+}
+
+hr {
+  width: 35rem;
+  margin: 0px 20px;
+}
+
+button {
+  display: block;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: aquamarine;
+}
+
+.sec1 {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+}
+
+.sec3 {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
 }
