@@ -1,17 +1,17 @@
-const Action = () => {
+const Action = (props) => {
   return (
     <footer className="action">
       <section className="sec sec1">
-        <button>➕</button>
-        <button>🔍</button>
+        <button onClick={props.onAdd}>➕</button>
+        <button onClick={props.onSearchButton}>🔍</button>
       </section>
 
-      <section className="sec sec2">3 items Left</section>
+      <section className="sec sec2">{props.leftItems} items Left</section>
 
       <section className="sec sec3">
-        <button>All</button>
-        <button>Active</button>
-        <button>Completed</button>
+        <button onClick={props.onShowAll}>All</button>
+        <button onClick={props.onActive}>Active</button>
+        <button onClick={props.onComplete}>Completed</button>
       </section>
     </footer>
   );

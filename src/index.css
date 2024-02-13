@@ -31,7 +31,7 @@
   display: flex;
   justify-content: space-around;
   background-color: cadetblue;
-  margin: 0px 10px;
+  margin: 10px 10px;
   width: 38rem;
   height: 2rem;
   padding: 5px;
@@ -66,7 +66,7 @@ header {
 
 hr {
   width: 35rem;
-  margin: 0px 20px;
+  margin: 0px 40px;
 }
 
 button {
@@ -89,4 +89,54 @@ button:hover {
   display: flex;
   justify-content: space-between;
   width: 200px;
+}
+
+.lists {
+  overflow-y: scroll;
+  height: 200px;
+}
+
+label {
+  margin-left: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.searchbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: cadetblue;
+  margin: 10px 10px;
+  width: 38rem;
+  height: 2rem;
+  padding: 5px;
+  color: white;
+  border-radius: 3px;
+}
+
+.search--task {
+  margin-bottom: 10px;
+  width: 25rem;
+  height: 1rem;
+  padding: 10px;
+  position: relative;
+  left: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px 2px rgb(162, 208, 214);
+}
+
+.cancel {
+  position: relative;
+  left: 2px;
+}
+
+.cancel:hover {
+  background-color: orangered;
+}
+.searchTaskButton {
+  position: relative;
+  left: 6px;
 }

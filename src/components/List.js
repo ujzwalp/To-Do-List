@@ -1,10 +1,18 @@
-const List = (props) => {
+import { forwardRef } from "react";
+
+const List = forwardRef((props, ref) => {
   return (
-    <p className="list">
-      <input type="checkbox" name="check" id="" />
-      <label htmlFor="">{props.label} Labels</label>
-    </p>
+    <div className="list" id={props.id}>
+      <input
+        type="checkbox"
+        name="check"
+        ref={ref}
+        onChange={props.onCheck}
+        checked={props.checked}
+      />
+      <label htmlFor="">{props.label}</label>
+    </div>
   );
-};
+});
 
 export default List;
